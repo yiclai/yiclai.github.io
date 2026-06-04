@@ -235,17 +235,17 @@ a { color: inherit; text-decoration: none; }
 
 .preface-text {
   font-size: 1.05rem;
-  line-height: 2;
-  color: var(--mid);
+  line-height: 2.1;
+  color: #666666;
   font-family: var(--sans);
   margin: 0 0 1.4em;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
 }
 
 .preface-text:first-child {
   font-size: 1.15rem;
-  color: var(--dark);
+  color: #666666;
   font-weight: 500;
 }
 
