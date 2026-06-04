@@ -577,7 +577,7 @@ a { color: inherit; text-decoration: none; }
 
 .footer-credit-role {
   font-weight: 700;
-  color: var(--dark);
+  color: var(--light);
   letter-spacing: 0.06em;
 }
 
