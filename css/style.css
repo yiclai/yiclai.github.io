@@ -597,7 +597,9 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 600px) {
   .articles-section { padding: 48px 5% 64px; }
   .about-strip { padding: 48px 7%; }
-  .footer-top { flex-direction: column; gap: 8px; text-align: center; }
+  .footer-top { flex-direction: column; gap: 16px; align-items: center; text-align: center; }
+  .footer-credits { flex-direction: column; align-items: center; gap: 6px; }
+  .footer-credit-item { justify-content: center; }
   .hero__title { font-size: 1.75rem; line-height: 1.2; }
   .hero__subtitle { font-size: 0.9rem; }
   .hero__scroll { display: none; }
