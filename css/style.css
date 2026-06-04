@@ -239,6 +239,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--mid);
   font-family: var(--sans);
   margin: 0 0 1.4em;
+  text-align: center;
 }
 
 .preface-text:first-child {
