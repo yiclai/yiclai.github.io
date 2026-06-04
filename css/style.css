@@ -538,6 +538,51 @@ a { color: inherit; text-decoration: none; }
 /* =========================================================
    FOOTER
    ========================================================= */
+/* =========================================================
+   CREDITS SECTION
+   ========================================================= */
+.credits-section {
+  border-top: 1px solid var(--border);
+  padding: 56px 7%;
+  background: var(--bg);
+}
+
+.credits-inner {
+  max-width: 960px;
+}
+
+.credits-inner .section-label {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.credits-grid {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.credits-col {
+  min-width: 120px;
+}
+
+.credits-role {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--light);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.credits-names {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--dark);
+  line-height: 1.9;
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 40px 7%;
