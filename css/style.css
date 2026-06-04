@@ -203,29 +203,66 @@ a { color: inherit; text-decoration: none; }
   background: var(--bg);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: 56px 7%;
+  padding: 64px 7%;
 }
 
 .preface-inner {
-  max-width: 720px;
-  border-left: 3px solid var(--accent);
-  padding-left: 28px;
+  max-width: 960px;
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
 }
 
-.preface-inner .section-label {
+.preface-label-col {
+  width: 120px;
+  flex-shrink: 0;
+  padding-right: 40px;
+  border-right: 1px solid var(--border);
+  padding-top: 4px;
+  position: sticky;
+  top: 80px;
+}
+
+.preface-label-col .section-label {
   display: block;
-  margin-bottom: 14px;
+  writing-mode: initial;
+}
+
+.preface-body-col {
+  flex: 1;
+  padding-left: 48px;
 }
 
 .preface-text {
   font-size: 1.05rem;
-  line-height: 1.9;
+  line-height: 2;
   color: var(--mid);
   font-family: var(--serif);
-  margin: 0 0 1.2em;
+  margin: 0 0 1.4em;
 }
+
+.preface-text:first-child {
+  font-size: 1.15rem;
+  color: var(--dark);
+  font-weight: 500;
+}
+
 .preface-text:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .preface-inner { flex-direction: column; }
+  .preface-label-col {
+    width: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding-right: 0;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    position: static;
+  }
+  .preface-body-col { padding-left: 0; }
 }
 
 /* =========================================================
