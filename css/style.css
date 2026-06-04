@@ -576,4 +576,5 @@ a { color: inherit; text-decoration: none; }
   .site-footer { flex-direction: column; gap: 12px; text-align: center; }
   .hero__title { font-size: 1.75rem; line-height: 1.2; }
   .hero__subtitle { font-size: 0.9rem; }
+  .hero__scroll { display: none; }
 }
