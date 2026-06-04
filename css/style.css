@@ -538,63 +538,44 @@ a { color: inherit; text-decoration: none; }
 /* =========================================================
    FOOTER
    ========================================================= */
-/* =========================================================
-   CREDITS SECTION
-   ========================================================= */
-.credits-section {
-  border-top: 1px solid var(--border);
-  padding: 56px 7%;
-  background: var(--bg);
-}
-
-.credits-inner {
-  max-width: 960px;
-}
-
-.credits-inner .section-label {
-  display: block;
-  margin-bottom: 32px;
-}
-
-.credits-grid {
-  display: flex;
-  gap: 48px;
-  flex-wrap: wrap;
-}
-
-.credits-col {
-  min-width: 120px;
-}
-
-.credits-role {
-  font-family: var(--sans);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--light);
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-.credits-names {
-  font-family: var(--sans);
-  font-size: 0.95rem;
-  color: var(--dark);
-  line-height: 1.9;
-}
-
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 40px 7%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
   font-family: var(--sans);
   font-size: 0.78rem;
   color: var(--light);
 }
 
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .footer-logo {
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: 0.06em;
+}
+
+.footer-credits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 32px;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.footer-credit-item {
+  display: inline-flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.footer-credit-role {
   font-weight: 700;
   color: var(--dark);
   letter-spacing: 0.06em;
@@ -618,7 +599,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 600px) {
   .articles-section { padding: 48px 5% 64px; }
   .about-strip { padding: 48px 7%; }
-  .site-footer { flex-direction: column; gap: 12px; text-align: center; }
+  .footer-top { flex-direction: column; gap: 8px; text-align: center; }
   .hero__title { font-size: 1.75rem; line-height: 1.2; }
   .hero__subtitle { font-size: 0.9rem; }
   .hero__scroll { display: none; }
