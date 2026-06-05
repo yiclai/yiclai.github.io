@@ -344,14 +344,19 @@
 
 /* ---- Next article featured card ---- */
 .next-card {
-  display: block;
-  background: var(--dark);
-  padding: 36px 40px;
-  transition: opacity 0.25s;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-top: 2px solid var(--dark);
+  border-bottom: 1px solid var(--border);
+  padding: 32px 0;
+  transition: opacity 0.2s;
 }
 
-.next-card:hover { opacity: 0.85; }
+.next-card:hover { opacity: 0.6; }
+
+.next-card__body { flex: 1; }
 
 .next-card__label {
   font-family: var(--sans);
@@ -360,23 +365,20 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .next-card__title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.4;
-  color: #fff;
+  line-height: 1.45;
+  color: var(--dark);
 }
 
 .next-card__arrow {
-  position: absolute;
-  right: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.5rem;
-  color: rgba(255,255,255,0.4);
+  font-size: 1.6rem;
+  color: var(--dark);
+  flex-shrink: 0;
 }
 
 /* ---- Back to top ---- */
